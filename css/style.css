@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borderbox;
+}
+
+body {
+    /* justify-content: center; */
+    /* display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-rows: 200px 100px minmax(100px, auto);
+    gap: 5px; */
+    grid-auto-rows: minmax(125px, auto);
+    grid-gap: .5rem;
+    background-color: rgb(199, 217, 221);
+    grid-template-areas: "header"
+        "section" "li";
+
+}
+
+header {
+    background-color: rgb(116, 188, 184);
+    color: white;
+    grid-column: 1fr;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: sticky;
+    grid-area: 'header';
+
+}
+
+h2 {
+    text-align: justify;
+    margin: 20px;
+}
+
+#precioHora {
+    text-align: center;
+    margin: 15px;
+}
+
+section {
+    align-items: center;
+    justify-content: center;
+    grid-area: 'section';
+}
+
+li {
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    margin: 20px;
+    list-style-type: none;
+    grid-area: 'li';
+}
+
+#nevImg {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#ordImg {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#lavaImg {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#lampImg {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#lavadoraImg {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#tv {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#aire {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#calef {
+    border: 10px;
+    width: 320px;
+    margin: 20px;
+}
+
+#buttonIm {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#buttonIm:hover {
+    background-color: #45a049;
+}
+
+#buttonIm:active {
+    background-color: #3e8e41;
+}
+
+#mensajeTotal {
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+@media (min-width: 600px) {
+    body {
+        grid-template-areas: "header"
+            "section" "li";
+        grid-template-rows: 12.5rem 1fr;
+        justify-content: center;
+
+
+    }
+
+    li {
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+    }
+
+    section {
+        align-content: center;
+    }
+
+    aside {
+        grid-area: aside;
+        display: flex;
+    }
+
+}

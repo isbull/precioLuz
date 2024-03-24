@@ -2,13 +2,73 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Precio de la Luz</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <header>
+        <h1>
+            ¡Calcula tu consumo de energia por horas!
+        </h1>
+        <p>
 
+    </header>
+    <section>
+        <h2> El precio de la luz actual es :</h2>
+        <p id="precioHora"></p>
+        <li>
+            <input id="nevera" type="checkbox" /><img src="./img/nevera.jpg" id="nevImg" alt=""><label
+                for="nevera"></label>
+        </li>
+
+        <li>
+            <input id="ordenador" type="checkbox" /><label for="ordenador"><img src="./img/ordenador.png" id="ordImg"
+                    alt=""></label>
+        </li>
+
+        <li>
+            <input id="lavavajillas" type="checkbox" /><label for="lavavajillas"><img src="./img/lavavajillas.png"
+                    id="lavaImg" alt=""></label>
+        </li>
+
+        <li>
+            <input id="lampara" type="checkbox" /><label for="lampara"><img src="./img/lamp.jpeg" id="lampImg"
+                    alt=""></label>
+        </li>
+
+        <li>
+            <input id="lavadora" type="checkbox" /><label for="lavadora"><img src="./img/lavadora.png" id="lavadoraImg"
+                    alt=""></label>
+        </li>
+
+        <li>
+            <input id="television" type="checkbox" /><label for="television"><img src="./img/tv.png" id="tv"
+                    alt=""></label>
+        </li>
+
+        <li>
+            <input id="airCon" type="checkbox" /><label for="airCon"><img src="./img/aire.png" alt="" id="aire"></label>
+        </li>
+
+        <li>
+            <input id="calefactor" type="checkbox" /><label for="calefactor"><img src="./img/calef.jpeg" id="calef"
+                    alt=""></label>
+        </li>
+
+        <div>
+            <input type="button" value="Calcular" id="buttonIm" onclick="consumoTotal()" />
+        </div>
+    </section>
+    <section>
+        </sectionid>
+        <h2>Tu consumo total es: </h2>
+        <h4 id="mensajeTotal"> ¡Aquí aparecerá tu consumo por hora en €!</h4>
+    </section>
+
+    <script src="./js/LuzMain.js"></script>
 </body>
 
 </html>
